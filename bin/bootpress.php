@@ -14,7 +14,7 @@ switch(strtolower($argv[1])) {
 		break;
 	case 'phpcs':
 		echo 'Checking that files matching the WordPress coding guideline' . PHP_EOL;
-		passthru('php vendor/bin/phpcs --standard=./tests/ruleset.xml src/');
+		passthru('php vendor/bin/phpcs --config-set installed_paths `readlink -e ./vendor/wp-coding-standards/wpcs` && php vendor/bin/phpcs --standard=./tests/ruleset.xml src/');
 		break;
 	case 'phpunit':
 		echo 'Running the unit tests' . PHP_EOL;

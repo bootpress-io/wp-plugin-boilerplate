@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ruleset name="WordpressPluginDevelopment">
 	<rule ref="PEAR.ControlStructures.ControlSignature"/>
-	<rule ref="../vendor/wordpress/coding-standards/WordPress"/>
+	<rule ref="WordPress"/>
 </ruleset>
